@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Central_TaskManagement::task_list" title="Task" module="Central_TaskManagement" sortOrder="25"
+             resource="Central_TaskManagement::task_list"/>
+        <add id="Central_TaskManagement::task_title" title="Tasks Management" module="Central_TaskManagement"
+             resource="Central_TaskManagement::task_title" parent="Central_TaskManagement::task_list" sortOrder="50"/>
+        <add id="Central_TaskManagement::task" title="Manage Tasks" module="Central_TaskManagement"
+             resource="Central_TaskManagement::task"
+             parent="Central_TaskManagement::task_title" sortOrder="0" action="taskmanagement/task"/>
+    </menu>
+</config>
